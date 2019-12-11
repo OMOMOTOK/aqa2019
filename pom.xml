@@ -24,6 +24,7 @@
         <cucumber.version>4.8.0</cucumber.version>
     </properties>
 
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -76,6 +77,14 @@
             <version>${cucumber.version}</version>
         </dependency>
 
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.2.RELEASE</version>
+        </dependency>
+
+
+    </dependencies
 
 </project>

@@ -18,7 +18,7 @@ public class YoutubeSteps extends BaseStep {
     }
 
     @Then("Youtube page loaded successfully")
-    public void validatePageloaded() {
+    public void validatePageloaded(String exectedStatus) {
         System.out.println("Youtube: Success!");
     }
 
@@ -26,4 +26,6 @@ public class YoutubeSteps extends BaseStep {
     public void validateVideoFound() {
         System.out.println("validating...");
     }
+
+
 }

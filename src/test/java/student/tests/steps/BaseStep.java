@@ -1,5 +1,6 @@
 package student.tests.steps;
 
+import com.sun.xml.internal.xsom.impl.scd.Iterators;
 import io.cucumber.testng.CucumberFeatureWrapper;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.PickleEventWrapper;
@@ -9,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pages.CalendarPage;
 import pages.GoogleSearchPage;
 import pages.YoutubePage;
 import util.WebDriverFacade;
@@ -21,12 +23,17 @@ public class BaseStep {
 
     protected YoutubePage youtubePage;
 
+    protected CalendarPage calendarPage;
+
     private TestNGCucumberRunner testNGCucumberRunner;
 
-    public BaseStep() {
+    public BaseStep(){
         this.googleSearchPage = new GoogleSearchPage(WebDriverFacade.getInstance());
         this.youtubePage = new YoutubePage(WebDriverFacade.getInstance());
+        this.calendarPage = new CalendarPage(WebDriverFacade.getInstance());
     }
+
+
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass() {

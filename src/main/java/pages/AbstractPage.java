@@ -22,4 +22,8 @@ public abstract class AbstractPage {
     public void takePageScreenshot(){
         System.out.println("TODO: implement scrn");
     }
+
+    public boolean isLoaded(){
+        return false;
+    }
 }

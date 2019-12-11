@@ -15,7 +15,7 @@ public class YoutubePage extends AbstractPage {
     }
 
     public WebElement getSearch() {
-        return facade.waitForElement(By.id("search"));
+        return facade.waitForElement(By.className("search"));
     }
 
     public WebElement getSearchButton() {
